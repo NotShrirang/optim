@@ -11,18 +11,15 @@ class GradientDescent(Optimizer):
     Gradient Descent optimizer.
 
     Parameters:
-    params (list): Model parameters.
-    learning_rate (float): Learning rate for the optimizer
-
-    Attributes:
-    params (list): Model parameters.
-    learning_rate (float): Learning rate for the optimizer
-
-    Methods:
-    step: Updates the model parameters based on the gradients.
+        params (list): Model parameters.
+        learning_rate (float): Learning rate for the optimizer
     """
 
-    def __init__(self, params: np.ndarray, learning_rate: float = 0.01) -> None:
+    def __init__(
+            self,
+            params: np.ndarray,
+            learning_rate: float = 1e-3
+        ) -> None:
         super().__init__(params, learning_rate)
 
     def step(self, grads: np.ndarray) -> list:

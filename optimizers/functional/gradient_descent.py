@@ -16,7 +16,7 @@ def gradient_descent(params: np.ndarray, grads: np.ndarray, learning_rate: float
     Returns:
     updated_params (list): List of updated parameter arrays.
     """
-    
+
     updated_params = []
     for param, grad in zip(params, grads):
         updated_param = param - learning_rate * grad

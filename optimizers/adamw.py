@@ -11,32 +11,22 @@ class AdamW(Optimizer):
     AdamW optimizer.
 
     Parameters:
-    params (list): Model parameters.
-    learning_rate (float): Learning rate for the optimizer.
-    beta1 (float): Exponential decay rate for the first moment estimates.
-    beta2 (float): Exponential decay rate for the second moment estimates.
-    epsilon (float): Term added to the denominator to improve numerical stability.
-    weight_decay (float): Weight decay rate.
-
-    Attributes:
-    params (list): Model parameters.
-    learning_rate (float): Learning rate for the optimizer.
-    beta1 (float): Exponential decay rate for the first moment estimates.
-    beta2 (float): Exponential decay rate for the second moment estimates.
-    epsilon (float): Term added to the denominator to improve numerical stability.
-    weight_decay (float): Weight decay rate.
-
-    Methods:
-    step: Updates the model parameters based on the gradients.
+        params (list): Model parameters.
+        learning_rate (float): Learning rate for the optimizer.
+        beta1 (float): Exponential decay rate for the first moment estimates.
+        beta2 (float): Exponential decay rate for the second moment estimates.
+        epsilon (float): Term added to the denominator to improve numerical stability.
+        weight_decay (float): Weight decay rate.
     """
 
-    def __init__(self,
+    def __init__(
+            self,
             params: np.ndarray,
-            learning_rate: float = 0.01,
+            learning_rate: float = 1e-3,
             beta1: float = 0.9,
             beta2: float = 0.999,
             epsilon: float = 1e-8,
-            weight_decay: float = 0.01
+            weight_decay: float = 1e-2
         ) -> None:
         super().__init__(params, learning_rate)
         self.beta1 = beta1

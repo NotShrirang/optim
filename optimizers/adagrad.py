@@ -9,8 +9,18 @@ from optimizers.optimizer import Optimizer
 class AdaGrad(Optimizer):
     """
     AdaGrad optimizer.
+
+    Parameters:
+        params (list): Model parameters.
+        learning_rate (float): Learning rate for the optimizer.
+        epsilon (float): A small constant for numerical stability.
     """
-    def __init__(self, params, learning_rate, epsilon=1e-8):
+    def __init__(
+            self,
+            params: np.ndarray,
+            learning_rate: float = 0.02,
+            epsilon: float = 1e-10
+        ):
         super().__init__(params, learning_rate)
         self.epsilon = epsilon
         self.state = None

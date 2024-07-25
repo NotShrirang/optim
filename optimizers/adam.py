@@ -11,28 +11,17 @@ class Adam(Optimizer):
     Adam optimizer.
 
     Parameters:
-    params (list): Model parameters.
-    learning_rate (float): Learning rate for the optimizer
-    beta1 (float): Exponential decay rate for the first moment estimates.
-    beta2 (float): Exponential decay rate for the second moment estimates.
-    epsilon (float): A small constant for numerical stability.
-
-    Attributes:
-    params (list): Model parameters.
-    learning_rate (float): Learning rate for the optimizer
-    beta1 (float): Exponential decay rate for the first moment estimates.
-    beta2 (float): Exponential decay rate for the second moment estimates.
-    epsilon (float): A small constant for numerical stability
-    state (list): State variables for the optimizer.
-
-    Methods:
-    step: Updates the model parameters based on the gradients.
+        params (list): Model parameters.
+        learning_rate (float): Learning rate for the optimizer
+        beta1 (float): Exponential decay rate for the first moment estimates.
+        beta2 (float): Exponential decay rate for the second moment estimates.
+        epsilon (float): A small constant for numerical stability.
     """
 
     def __init__(
             self,
             params: np.ndarray,
-            learning_rate: float = 0.01,
+            learning_rate: float = 1e-3,
             beta1: float = 0.9,
             beta2: float = 0.999,
             epsilon: float = 1e-8
