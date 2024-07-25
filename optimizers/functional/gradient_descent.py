@@ -1,6 +1,10 @@
+"""
+Functional implementation of Gradient Descent optimizer.
+"""
+
 import numpy as np
 
-def gradient_descent(params: np.ndarray, grads: np.ndarray, learning_rate: float = 0.01) -> np.ndarray:
+def gradient_descent(params: np.ndarray, grads: np.ndarray, learning_rate: float = 0.01) -> list:
     """
     Simple Gradient Descent optimizer.
     
@@ -10,11 +14,11 @@ def gradient_descent(params: np.ndarray, grads: np.ndarray, learning_rate: float
     learning_rate (float): Learning rate for the optimizer.
     
     Returns:
-    updated_params (np.ndarray): List of updated parameter arrays.
+    updated_params (list): List of updated parameter arrays.
     """
     
     updated_params = []
     for param, grad in zip(params, grads):
         updated_param = param - learning_rate * grad
         updated_params.append(updated_param)
-    return np.array(updated_params)
+    return updated_params
