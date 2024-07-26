@@ -5,7 +5,6 @@ A simple Streamlit app to visualize different optimizers.
 import streamlit as st
 import numpy as np
 import matplotlib.pyplot as plt
-
 from optimizers import adagrad, adam, adamw, rmsprop, gradients
 
 st.set_page_config(
