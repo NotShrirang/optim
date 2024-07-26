@@ -39,7 +39,7 @@ This repository is dedicated to providing a comprehensive yet beginner-friendly 
 1. Clone the repository
    ```sh
    git clone https://github.com/NotShrirang/optim.git
-   cd Sonnet
+   cd optim
    ```
 
 2. Install the required dependencies
