@@ -10,7 +10,7 @@
 ![GitHub](https://img.shields.io/github/license/NotShrirang/optim)
 ![GitHub last commit](https://img.shields.io/github/last-commit/NotShrirang/optim)
 ![GitHub repo size](https://img.shields.io/github/repo-size/NotShrirang/optim)
-![Streamlit App](https://img.shields.io/badge/Streamlit%20App-red?style=flat-rounded-square&logo=streamlit&labelColor=white)
+[![Streamlit App](https://img.shields.io/badge/Streamlit%20App-red?style=flat-rounded-square&logo=streamlit&labelColor=white)]()
 
 This repository is dedicated to providing a comprehensive yet beginner-friendly guide to various deep learning optimizers. You'll find detailed explanations and implementations of popular optimizers like SGD, Adam, and RMSProp, along with a visualizer to help you understand their behaviors. Whether you're new to deep learning or looking to solidify your understanding, this resource is designed to make the learning process easier and more interactive.
 
