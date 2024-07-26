@@ -1,6 +1,7 @@
 # Optim: A Simple Beginner's Guide to Deep Learning Optimizers
 
-[![medium](https://img.shields.io/badge/Read%20Blog-grey?style=for-the-badge&logo=Medium&logoColor=white&logoSize=amd)]()
+[![medium](https://img.shields.io/badge/Read%20Blog-grey?style=for-the-badge&logo=Medium&logoColor=white&logoSize=amd)](https://medium.com/@shrirangmahajan123/optimizers-a-simple-beginners-guide-8ab6942880dd)
+[![Optimizer Visualizer](https://img.shields.io/badge/Optimizer%20Visualizer-red?style=for-the-badge&logo=streamlit&logoColor=white&logoSize=amd)](https://optimizer-visualizer.streamlit.app/)
 
 ![GitHub stars](https://img.shields.io/github/stars/NotShrirang/optim?style=social)
 ![GitHub forks](https://img.shields.io/github/forks/NotShrirang/optim?style=social)
